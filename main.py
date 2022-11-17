@@ -16,7 +16,12 @@ def ogrenci_yazdir():
         harf_notu = "CC"
     else:
         harf_notu = "FF"
-
+        
+    print("""{} adlı öğrencinin
+        Başarı Notu: {}
+        Harf Notu: {}
+        \n""".format(isim, basari_notu, harf_notu))
+    
     with open("notlar.txt", "a") as dosya:
         dosya.writelines("""{} adlı öğrencinin
         Başarı Notu: {}
